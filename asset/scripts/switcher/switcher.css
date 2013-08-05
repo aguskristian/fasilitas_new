@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+
+.bg1 { 
+	background:url("../../images/backgrounds/bokeh-1.jpg") no-repeat scroll top center #010101;
+}
+.bg2 { 
+	background:url("../../images/backgrounds/bokeh-2.jpg") no-repeat scroll top center #010101;
+}
+.bg3 { 
+	background:url("../../images/backgrounds/bokeh-3.jpg") no-repeat scroll top center #010101;
+}
+.bg4 { 
+	background:url("../../images/backgrounds/bokeh-4.jpg") no-repeat scroll top center #010101;
+}
+.bg5 { 
+	background:url("../../images/backgrounds/bokeh-5.jpg") no-repeat scroll top center #010101;
+}
+.bg6 { 
+	background:url("../../images/backgrounds/bokeh-6.jpg") no-repeat scroll top center #010101;
+}
+.bg7 { 
+	background:url("../../images/backgrounds/bokeh-7.jpg") no-repeat scroll top center #010101;
+}
+.bg8 { 
+	background:url("../../images/backgrounds/bokeh-8.jpg") no-repeat scroll top center #010101;
+}
+.bg9 { 
+	background:url("../../images/backgrounds/bokeh-9.jpg") no-repeat scroll top center #010101;
+}
+.bg10 { 
+	background:url("../../images/backgrounds/bokeh-10.jpg") no-repeat scroll top center #010101;
+}
+.bg11 { 
+	background:url("../../images/backgrounds/notbokeh-1.jpg") no-repeat scroll top center #010101;
+}
+.bg12 { 
+	background:url("../../images/backgrounds/notbokeh-2.jpg") no-repeat scroll top center #010101;
+}
+.bg13 { 
+	background:url("../../images/backgrounds/notbokeh-3.jpg") no-repeat scroll top center #010101;
+}
+.bg14 { 
+	background:url("../../images/backgrounds/notbokeh-4.jpg") no-repeat scroll top center #010101;
+}
+.floating { width:80px; position:absolute; top:30px; left:0; padding:10px; background:#1F1F1F; color:#fff; border-right:1px solid #2F2F2F; border-top:1px solid #2F2F2F; border-bottom:1px solid #2F2F2F; }
+	.floating ul li { list-style:none }
+	/*.floating li { width:20px; display:block; padding:2px; float:left;}*/
+	.floating h5 { color:#939393; }

@@ -1,0 +1,99 @@
+h3 {
+			margin: 0;	
+			padding: 7px 0 0 0;
+			font-size: 16px;
+		}
+.feature-shadow { 
+	background:url("shadow.png");
+	background-repeat:no-repeat;
+	background-position:0 300px;
+	height:320px;
+	}
+		div#feature_list {
+			width: 940px;
+			height: 300px;
+			overflow: hidden;
+			position: relative;
+			background:url("bg.png") repeat;
+		}
+
+		div#feature_list ul {
+			position: absolute;
+			top: 0;
+			list-style: none;	
+			padding: 0;
+			margin: 0;
+		}
+
+		ul#tabs {
+			left: 0;
+			z-index: 2;
+			width: 381px;
+		}
+
+		ul#tabs li {
+			font-size: 12px;
+			font-family: Arial;
+			padding:0;
+			background:none;
+		}
+		
+		ul#tabs li img {
+			padding: 5px;
+			border: none;
+			float: left;
+			margin: 10px 10px 0 0;
+		}
+
+		ul#tabs li a {
+			color: #4f4f4f;
+			text-decoration: none;	
+			display: block;
+			padding: 10px;
+			height: 55px;
+			outline: none;
+		}
+
+		ul#tabs li a:hover {
+			text-decoration: none;
+		}
+
+		ul#tabs li a.current {
+			background:  url('feature-tab-current.png');
+			color: #FFF;
+		}
+
+		ul#tabs li a.current:hover {
+			text-decoration: none;
+			cursor: default;
+		}
+
+		ul#output {
+			right: 0;
+			width: 590px;
+			height: 300px;
+			position: relative;
+		}
+
+		ul#output li {
+			position: absolute;
+			width: 570px;
+			height: 300px;
+			padding:0;
+		}
+
+		ul#output li a {
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
+			padding: 8px 12px;
+			text-decoration: none;
+			font-size: 11px;
+			color: #FFF;
+			background: #000;
+			-moz-border-radius: 5px;
+		}
+		
+		ul#output li a:hover {
+			background: #235575;
+		}

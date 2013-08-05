@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* Pure CSS3 Navigation */
+#navigation {
+	height:53px;
+	z-index:999;
+	width:960px;
+	/*background:url('../images/bg-navigation.png') no-repeat;*/
+	padding:15px 10px 0 10px;
+	margin:0 auto;
+	float:none;
+}
+#nav {
+	line-height: 100%;
+	margin:0;
+}
+#nav li {
+	z-index:998;
+	margin: 0 3px;
+	padding: 0 0 8px;
+	float: left;
+	position: relative;
+	list-style: none;
+}
+/* main level link */
+#nav a {
+	font-family: 'Ubuntu', sans-serif;
+	color: #5F5F5F;
+	text-decoration: none;
+	display: block;
+	padding:  8px 15px;
+	margin: 0;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	cursor:pointer;
+}
+/* main level link hover */
+#nav .current a, #nav li:hover > a {
+	background: #262626; /* for non-css3 browsers */
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#1F1F1F', endColorstr='#0F0F0F'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#1F1F1F), to(#0F0F0F)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #1F1F1F,  #0F0F0F); /* for firefox 3.6+ */
+
+	color: #c3c3c3;
+	border-top: solid 1px #363636;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+	text-shadow: 0 1px 0 rgba(25, 60, 84, .8);
+}
+/* sub levels link hover */
+#nav ul li:hover a, #nav li:hover li a {
+	background: none;
+	border: none;
+	color: #6d6d6d;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	text-shadow: none;
+	filter: none;
+}
+#nav ul a:hover {
+	background: #262626 !important; /* for non-css3 browsers */
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#262626', endColorstr='#0F0F0F'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#262626), to(#0F0F0F)) !important; /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #262626,  #0F0F0F) !important; /* for firefox 3.6+ */
+
+	color: #c3c3c3 !important;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+}
+/* level 2 list */
+#nav ul {
+	background: #141414; /* for non-css3 browsers */
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#141414', endColorstr='#0f0f0f'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#141414), to(#0f0f0f)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #141414,  #0f0f0f); /* for firefox 3.6+ */
+
+	display: none;
+	margin: 0;
+	padding: 0;
+	width: 185px;
+	position: absolute;
+	top: 35px;
+	left: 0;
+	border: solid 1px #1b1b1b;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+	
+	z-index:999;
+}
+/* dropdown */
+#nav li:hover > ul {
+	display: block;
+}
+#nav ul li {
+	float: none;
+	margin: 0;
+	padding: 0;
+}
+#nav ul a {
+	font-weight: normal;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, .9);
+}
+/* level 3+ list */
+#nav ul ul {
+	left: 181px;
+	top: -3px;
+}
+/* rounded corners for first and last child */
+#nav ul li:first-child > a {
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+}
+#nav ul li:last-child > a {
+	-webkit-border-bottom-left-radius: 95px;
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+}
+/* clearfix */
+#nav:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+#nav {
+	display: inline-block;
+}
+html[xmlns] #nav {
+	display: block;
+}
+* html #nav {
+	height: 1%;
+}
+

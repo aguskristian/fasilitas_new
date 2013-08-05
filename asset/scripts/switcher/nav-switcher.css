@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+.navigation1 { 
+	background:url('../../images/bg-navigation.png') no-repeat;
+}
+.navigation2 { 
+	background:url('../../images/bg-navigation-light.png') no-repeat;
+}
+.navigation3 { 
+	background:url('../../images/bg-navigation-blue.png') no-repeat;
+}
+.navigation4 { 
+	background:url('../../images/bg-navigation-orange.png') no-repeat;
+}
+.navigation5 { 
+	background:url('../../images/bg-navigation-purple.png') no-repeat;
+}
